@@ -31,7 +31,7 @@ return new class extends Migration {
             $table->string('extension', 10)->nullable();
             $table->string('email', 100)->nullable();
             $table->string('officeCode', 10)->nullable();
-            $table->integer('reportsTo')->nullable();
+            $table->integer('reportsTo')->unsigned()->nullable();
             $table->string('jobTitle', 50)->nullable();
         });
 
